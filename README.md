@@ -1,2 +1,1 @@
-# web-discord-client
-Web based Discord client with tabs. (2021)
+It was my first time using Electron
