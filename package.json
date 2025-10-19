@@ -1,0 +1,18 @@
+{
+  "name": "discord-web-based-client",
+  "version": "1.0.0",
+  "description": "web based discord client.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": ["discord", "discord client", "betterdiscord", "discord tabs"],
+  "author": "mTooku",
+  "license": "ISC",
+  "dependencies": {
+    "electron-tabs": "^1.0.3"
+  },
+  "devDependencies": {
+    "electron": "^31.0.1"
+  }
+}

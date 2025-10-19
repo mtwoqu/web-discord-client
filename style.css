@@ -1,0 +1,97 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  background-color: #36393f;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-bar {
+  display: flex;
+  align-items: center;
+  background-color: #202225;
+  padding: 5px;
+  flex-shrink: 0;
+}
+
+#tabs {
+  display: flex;
+  flex-grow: 1;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #2f3136;
+  color: #b9bbbe;
+  border-radius: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+  max-width: 300px;
+}
+
+.tab.active {
+  background-color: #40444b;
+  color: #ffffff;
+}
+
+.tab-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex-grow: 1;
+}
+
+.close-tab-btn {
+  margin-left: 8px;
+  border: none;
+  background: none;
+  color: #b9bbbe;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 4px;
+}
+
+.close-tab-btn:hover {
+  color: #ffffff;
+}
+
+#add-tab-btn {
+  border: none;
+  background-color: #2f3136;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#add-tab-btn:hover {
+  background-color: #40444b;
+}
+
+#views {
+  flex-grow: 1;
+  position: relative;
+}
+
+webview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+webview.visible {
+  visibility: visible;
+}
